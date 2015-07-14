@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:id="@+id/linl_goodsInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/play_but_background"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/imgV_goodsimage"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_margin="5dip"
+                android:src="@drawable/loading"
+                android:layout_marginBottom="5dip" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_goosName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小鸡炖蘑菇"
+                    android:textColor="@android:color/black"
+                    android:textSize="17dip" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="价格："
+                        android:textColor="#a6a6a6" />
+
+                    <TextView
+                        android:id="@+id/txt_goodsprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="37"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_goodspriceUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/份"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/btn_order_style"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linl_shopGoodsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="请选择份数" />
+
+        <ImageView
+            android:id="@+id/btn_reduction"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/btn_reduction_style"
+            android:padding="0dip"
+            android:scaleType="fitXY"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtxt_shopGoodsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:padding="2dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:text="1"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/btn_add"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:background="@drawable/btn_add_style"
+            android:padding="0dip"
+            android:scaleType="fitXY"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/btn_shopGoodsCount_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_shop_ok_style"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+</LinearLayout>

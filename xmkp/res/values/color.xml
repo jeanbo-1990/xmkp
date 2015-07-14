@@ -1,0 +1,13 @@
+<!--?xml version=1.0 encoding=utf-8?-->
+<resources>
+    <color name="menu_Down">#FFD39B</color>
+    <color name="menu">#FFE7BA</color>
+    <color name="top">#A52A2A</color>
+    <color name="write">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="main_color">#EBEBEB</color>
+    <color name="top_bg_color">#ff7201</color>
+    <color name="car_top_bg_color">#f5f5f5</color>
+    <color name="huise">#b2b2b2</color>
+    <color name="menu_pop">#303030</color>
+</resources>

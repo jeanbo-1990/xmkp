@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_bg_color"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/top_btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/top_btn_home_bg"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/top_btn_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/top_btn_other_bg"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+       
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#bfbebe" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:id="@+id/operate_menu_view"
+                style="@style/main_tab_but_linear" >
+
+                <ImageView
+                    android:id="@+id/operate_img_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/operate_img_view_down" />
+
+                <TextView
+                    android:id="@+id/operate_txt_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/operate_txt_view"
+                    android:textColor="@color/top_bg_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/operate_menu_preferential"
+                style="@style/main_tab_but_linear" >
+
+                <ImageView
+                    android:id="@+id/operate_img_preferential"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/operate_img_preferential" />
+
+                <TextView
+                    android:id="@+id/operate_txt_preferential"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/operate_txt_preferential"
+                    android:textColor="#bfbdbe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/operate_menu_car"
+                style="@style/main_tab_but_linear" >
+
+                <ImageView
+                    android:id="@+id/operate_img_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/operate_img_car" />
+
+                <TextView
+                    android:id="@+id/operate_txt_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/operate_txt_car"
+                    android:textColor="#bfbdbe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/operate_menu_my"
+                style="@style/main_tab_but_linear" >
+
+                <ImageView
+                    android:id="@+id/operate_img_my"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/operate_img_my" />
+
+                <TextView
+                    android:id="@+id/operate_txt_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/operate_txt_my"
+                    android:textColor="#bfbdbe" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>
